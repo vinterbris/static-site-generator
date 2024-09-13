@@ -17,17 +17,17 @@ class TestTextNode(unittest.TestCase):
     def test_not_eq(self):
         node = TextNode("This is a text node", "bold")
         node2 = TextNode("This is not a text node", "bold")
-        self.assertNotEquals(node, node2)
+        self.assertNotEqual(node, node2)
 
     def test_not_eq_with_url(self):
         node = TextNode("This is a text node", "bold")
         node2 = TextNode("This is a text node", "bold", "boot.dev")
-        self.assertNotEquals(node, node2)
+        self.assertNotEqual(node, node2)
 
     def test_not_eq_text_type(self):
         node = TextNode("This is a text node", "bold")
         node2 = TextNode("This is a text node", "italic")
-        self.assertNotEquals(node, node2)
+        self.assertNotEqual(node, node2)
 
 if __name__ == "__main__":
     unittest.main()
