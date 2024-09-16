@@ -6,4 +6,6 @@ def main():
     tn = TextNode('Text node', 'Italic', 'https://www.boot.dev')
     print(tn)
 
-main()
+# main()
+# txt_node = TextNode('hello', 'text')
+# print(txt_node)
